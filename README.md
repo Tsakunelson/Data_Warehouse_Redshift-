@@ -26,6 +26,7 @@ This dataset is JSON format as well, containing user generated event on the app,
 
 
 Below is a screenshot of the data table:
+![Log Events Head](http://url/to/img.png)
 
 
 ## Files Description
