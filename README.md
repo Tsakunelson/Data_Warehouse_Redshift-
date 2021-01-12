@@ -25,7 +25,7 @@ This dataset is JSON format as well, containing user generated event on the app,
 
 
 Below is a screenshot of the data table:
-![Log Events Head]()
+![Log Events Head](https://github.com/Tsakunelson/Data_Warehouse_Redshift-/blob/main/log-data.png)
 
 # Files Description
 
@@ -97,4 +97,4 @@ Using the above song and events dataset, below is the star schema designed and o
 
 
 # Sample Use case
-
+Query = ``` "SELECT DISTINCT u.user_id, u.first_name, u.last_name, u.gender, u.level FROM users u WHERE user_id IS NOT NULL;"```
