@@ -27,7 +27,7 @@ This dataset is JSON format as well, containing user generated event on the app,
 
 
 Below is a screenshot of the data table:
-
+![Log Events Head]()
 
 Files Description
 The project package includes four files
@@ -62,8 +62,8 @@ Star DataBase Schema
 Using the above song and events dataset, below is the star schema designed and optimized for real-time quering
 
 
-    |Users|                     . |songs|          ------ .                 .    -----
-             .              .
+    |Users|                     . |songs|                    
+     ------ .                .     -----
                | songplays |
                .------------.
               .              .
