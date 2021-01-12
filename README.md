@@ -1,14 +1,12 @@
-Project Motivation
+# Project Motivation
 A music startup is starting to experience growth and has decided to move thier data to the cloud. The collected data takes the form of JSON files from user activity on the music app and a second set of JSON log files consisting of songs and artists data from the app all stored in S3.
 
 The purpose of this project is to build an ETL pipeline that to extract data from the JSON files on S3 and store them in Redshift tables. The latter is to enhance scalability and efficiency of real-time quesries for the analytics team, by structuring the data on redshift into optimized fact and dimensional tables.
 
 By the end of this project, the analytics team should be able to run real-time queries for insightful decision making on the app.
 
-Objectives
-- 
 
-Data Sources
+# Data Sources
 
 Two data sources in JSON format:
 
@@ -29,7 +27,8 @@ This dataset is JSON format as well, containing user generated event on the app,
 Below is a screenshot of the data table:
 ![Log Events Head]()
 
-Files Description
+# Files Description
+
 The project package includes four files
 
 create_tables.py: This files is in charge of creating the fact and dimensional tables on redshift
@@ -57,7 +56,7 @@ LOG_JSONPATH=''
 SONG_DATA=''
 '''
 
-Star DataBase Schema
+# Star DataBase Schema
 
 Using the above song and events dataset, below is the star schema designed and optimized for real-time quering
 
@@ -71,11 +70,11 @@ Using the above song and events dataset, below is the star schema designed and o
     |artists|                    .|time| 
      --------                     -----
 
-Fact Table
+## Fact Table
 1. songplays - records in event data associated with song plays i.e. records with page NextSong
     - songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
 
-Dimension Tables
+## Dimension Tables
 2. users - users in the app
     - user_id, first_name, last_name, gender, level
 3. songs - songs in music database
@@ -86,7 +85,7 @@ Dimension Tables
     - start_time, hour, day, week, month, year, weekday
 
 
-Running the Project
+# Running the Project
 
 1. Configure you dwh.cfg file to connect to Redshift
 
@@ -97,5 +96,5 @@ Running the Project
 ''' python etl.py '''
 
 
-Sample Use case
+# Sample Use case
 
