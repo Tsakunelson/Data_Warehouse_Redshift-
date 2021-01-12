@@ -94,7 +94,3 @@ Using the above song and events dataset, below is the star schema designed and o
 
 3. Run the etl process to create the optimized tables on Redshift
 ''' python etl.py '''
-
-
-# Sample Use case
-Query = ``` "SELECT DISTINCT u.user_id, u.first_name, u.last_name, u.gender, u.level FROM users u WHERE user_id IS NOT NULL;"```
