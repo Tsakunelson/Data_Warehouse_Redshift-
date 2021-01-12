@@ -4,7 +4,7 @@ A music startup is starting to experience growth and has decided to move thier d
 The purpose of this project is to build an ETL pipeline that to extract data from the JSON files on S3 and store them in Redshift tables. The latter is to enhance scalability and efficiency of real-time quesries for the analytics team, by structuring the data on redshift into optimized fact and dimensional tables.
 
 By the end of this project, the analytics team should be able to run real-time queries for insightful decision making on the app.
-
+![S3-REDSHIFT](https://github.com/Tsakunelson/Data_Warehouse_Redshift-/blob/main/S3-vs-redshift%20(1).png)
 
 # Data Sources
 
