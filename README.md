@@ -37,7 +37,7 @@ etl.py: Consists of extracting(E) data from S3 into temporary staging tables on 
 
 sql_queries.py: This is where all sql quesries are written (similar to a helper function containing the required sql statements)
 
-dwh.cfg: As the name states, dwh.cfg = data warehouse house configurations; this it contains are the necessary configurations required to connect to your created data Redshift dataware house. Bellow are the parameters topopulate the dwh.cfg file for a succesfull connection:
+dwh.cfg: As the name states, dwh.cfg = data warehouse house configurations; contains the necessary configurations required to connect to the created Redshift dataware house. Bellow are the parameters topopulate the dwh.cfg file for a succesfull connection:
 
 ```
 [CLUSTER]
